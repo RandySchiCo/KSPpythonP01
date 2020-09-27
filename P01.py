@@ -1,9 +1,14 @@
+# import modul
+import random
+
 # Initialisierung
 versuche = 3
-geheimzahl = 8015
+geheimzahl = random.randint(1,100)
 eingabe = 0
 counter = 0
 count_versuche = 0
+
+print (geheimzahl)
 
 # Schleifenkopf und Schleifenkörper
 while eingabe != geheimzahl:
