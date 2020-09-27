@@ -3,12 +3,10 @@ import random
 
 # Initialisierung
 versuche = 3
-geheimzahl = random.randint(1, 100)
+geheimzahl = 8015
 eingabe = 0
 counter = 0
 count_versuche = 0
-
-print (geheimzahl)
 
 # Schleifenkopf und Schleifenkörper
 while eingabe != geheimzahl:
