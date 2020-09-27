@@ -1,6 +1,3 @@
-# import modul
-import random
-
 # Initialisierung
 versuche = 3
 geheimzahl = 8015
