@@ -6,7 +6,7 @@ counter = 0
 count_versuche = 0
 
 # Schleifenkopf und Schleifenkörper
-while eingabe != geheimzahl || count_versuche != versuche:
+while eingabe != geheimzahl:
     eingabe = int (input("Ganze Zahl eingeben: "))
 
     if eingabe < geheimzahl:
@@ -18,7 +18,10 @@ while eingabe != geheimzahl || count_versuche != versuche:
     counter += 1
     count_versuche +=1
 
+    if count_versuche == versuche:
+        break
+
 if eingabe == geheimzahl:
     print("Richtig Sie haben", counter, " Versuche benoetigt")
-else
+else:
     print("Sie haben die Zahl leider nicht erraten!")
